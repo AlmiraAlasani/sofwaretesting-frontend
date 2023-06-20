@@ -34,7 +34,7 @@ export default function Login() {
         />
       </label>
        <button className="btn">Login</button>
-       <button className="btn" disabled>loading</button>
+       
 
     </form>
   )

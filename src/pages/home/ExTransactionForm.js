@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react'
 
 
-export default function TransactionForm({ onCreate }) {
+export default function ExTransactionForm({ onCreate }) {
   const [newTodo, setNewTodo] = useState({
-    name: '',
+
     description: '',
 
-    isCompleted: false,
   });
 
   const handleChange = (e) => {
@@ -33,8 +32,8 @@ export default function TransactionForm({ onCreate }) {
 
   return (
     <>
-      <h3>Add a Income</h3>
-      <form  onSubmit={handleSubmit}>
+      <h3 style={{color:"red",marginTop:"15px"}}>Add a Expense</h3>
+      <form style={{backgroundColor:"red"}} onSubmit={handleSubmit}>
        
        <label>
          <span>Descritpion ($):</span>
@@ -52,6 +51,7 @@ export default function TransactionForm({ onCreate }) {
          <input
              type="number"
              name="amount"
+             defaultValue={undefined}
              placeholder="amount"
              value={newTodo.amount}
              onChange={handleChange}

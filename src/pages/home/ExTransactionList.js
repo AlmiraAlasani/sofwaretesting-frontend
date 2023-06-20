@@ -2,13 +2,13 @@
 // styles
 import styles from './Home.module.css'
 
-export default function TransactionList({ transactions ,onDelete }) {
+export default function ExTransactionList({ transactions ,onDelete }) {
 
 
   return (
     <ul className={styles.transactions}>
       {transactions?.map((transaction) => (
-        <li key={transaction.id}>
+        <li key={transaction.id} style={{borderLeftColor:"red"}}>
           <p className={styles.name}>{transaction.description}</p>
           <p className={styles.amount}>${transaction.amount}</p>
           <button
