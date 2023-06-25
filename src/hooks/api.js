@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getToken } from './tokenStorage';
 
-const BASE_URL = 'https://localhost:7282';
+const BASE_URL = 'https://localhost:44308';
 
 export const getIncomes = async () => {
     const token = getToken();

@@ -95,7 +95,7 @@ export default function Home() {
     <div className={styles.container}>
        
       <div className={styles.content}>
-      <h3>ACCOUNT BALANCE:{balance.balance}</h3>
+      <h3  data-testid="account-balance">ACCOUNT BALANCE:{balance.balance}</h3>
          <TransactionList transactions={incomes}
            onDelete={handledeleteIncomes}/>
 

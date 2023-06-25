@@ -8,7 +8,7 @@ export default function ExTransactionList({ transactions ,onDelete }) {
   return (
     <ul className={styles.transactions}>
       {transactions?.map((transaction) => (
-        <li key={transaction.id} style={{borderLeftColor:"red"}}>
+        <li key={transaction.id} data-testid="income-transaction" style={{borderLeftColor:"red"}}>
           <p className={styles.name}>{transaction.description}</p>
           <p className={styles.amount}>${transaction.amount}</p>
           <button
